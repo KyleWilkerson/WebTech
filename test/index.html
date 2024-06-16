@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Clickable Input</title>
+    <style>
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 0.125rem solid #ced4da;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            border-radius: 0.5rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            pointer-events: none; /* Prevent interaction with the input */
+        }
+
+        .clickable-email {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        .clickable-email a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0); /* Make the link area transparent */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-floating mb-3 clickable-email">
+        <input class="form-control" id="email" type="email" value="kyle.wilkerson@my.utsa.edu" disabled />
+        <a href="mailto:kyle.wilkerson@my.utsa.edu"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* CSS Document */
+.banner-main {
+	background-color:#00055191 !important;
+	color:#FFFFFF;
+	padding:10px;
+	margin:5px;
+}
+.button-selected{
+	background-color:#FF0000;
+}
+.menu-color{
+	background-color:#5B9BD5;
+	text-align:center;
+}
+.doggo-image {
+	display: block;
+	max-height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width:25%;
+}
+a {
+	text-decoration: none;
+}
+ 
+.center {
+	text-align: center;
+}
+.strong {
+	font-weight: bold;
+}
+.container {
+	display:flex;
+	justify-content: space-between;
+}
+.italic {
+	font-style: italic;
+}
